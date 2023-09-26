@@ -1,10 +1,29 @@
-<div>
-  <h1>Lista Pokémon</h1>
+
+<body>
+  <div class="one">
+    <h1>Il mio Pokedex</h1>
+  </div>
+
+  <div class="up-button">
+    <button (click)="loadPrevious()"> Indietro </button>
+    <button (click)="loadNext()"> Avanti </button>
+  </div>
+
   <ul>
     <li *ngFor="let pokemon of pokemonList">
-      {{ pokemon.name }}
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <mat-card *ngFor="let pokemon of pokemonList">
+          <mat-card-content>
+            <a target="_blank" [href]="pokemon.url">{{ pokemon.name }}</a>
+          </mat-card-content>
+        </mat-card>
+      </div>
     </li>
   </ul>
-</div>
 
+  <div class="down-button">
+    <button (click)="loadPrevious()"> Indietro </button>
+    <button (click)="loadNext()"> Avanti </button>
+  </div>
+</body>
 

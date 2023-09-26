@@ -1,0 +1,105 @@
+/* Stili globali */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f0f0f0; /* Cambia il colore di sfondo a tuo piacimento */
+}
+
+/* Stili per l'intestazione */
+.one {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.one h1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 100px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.one h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  margin-right: -14px;
+  background-color: #b80000;
+}
+
+.one h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+
+/* Stili per i pulsanti */
+.up-button,
+.down-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 15px 38px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color 0.3s ease;
+  background-color: #FFCC33;
+  border: #080808 1px;
+  border-radius: 0px;
+  box-shadow: 5px 5px 4px #978d21, -5px -5px 4px #ffff4b;
+}
+
+.button:hover {
+  background-color: #f8f8f0;
+}
+
+.down-button button {
+  margin-bottom: 80px;
+}
+
+.up-button button {
+  margin-top: 40px;
+}
+
+/* Stili per le carte (Angular Material) */
+mat-card {
+  border-radius: 0px;
+  background: #FFCC33;
+  box-shadow: inset 5px 5px 10px #665214,
+              inset -5px -5px 10px #ffff52;
+}
+
+/* Stili per l'elenco */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
